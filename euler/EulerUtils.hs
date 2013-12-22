@@ -3,7 +3,7 @@ module EulerUtils where
 fibs = 1:1:zipWith (+) fibs (tail fibs)
 
 primes = sieve [2..]
-  where sieve (prime:rest) = prime:sieve [x | x <- rest, x `mod` prime > 0]
+  where sieve (x:xs) = x : sieve (filter ((/= 0) . (`mod` x)) xs)
 
 primesBelow n = takeWhile (<n) primes
 

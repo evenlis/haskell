@@ -1,2 +1,2 @@
 import EulerUtils
-p7 = last (take 10001 (primes))
+p7 = primes !! 10001

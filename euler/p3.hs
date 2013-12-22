@@ -1,2 +1,2 @@
 import EulerUtils
-p3 =  (primeFactors 600851475143)
+p3 = maximum (primeFactors 600851475143)

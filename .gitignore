@@ -1,0 +1,4 @@
+# Non-source extensions
+*.hi
+*.hs~
+*.o
